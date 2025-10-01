@@ -389,6 +389,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iarna/toml@npm:^2.2.5":
+  version: 2.2.5
+  resolution: "@iarna/toml@npm:2.2.5"
+  checksum: 10c0/d095381ad4554aca233b7cf5a91f243ef619e5e15efd3157bc640feac320545450d14b394aebbf6f02a2047437ced778ae598d5879a995441ab7b6c0b2c2f201
+  languageName: node
+  linkType: hard
+
 "@isaacs/cliui@npm:^8.0.2":
   version: 8.0.2
   resolution: "@isaacs/cliui@npm:8.0.2"
@@ -847,6 +854,19 @@ __metadata:
   peerDependencies:
     "@sveltejs/kit": ^2.0.0
   checksum: 10c0/8f0f38efbc26f7dfc523844b013c801ef1c1cfc9f3b0370ae2d446a9436297f9fd2cc9bc3c2b15649c99ae975275d58557b508640ec3ad8c75dbe0ed632935c8
+  languageName: node
+  linkType: hard
+
+"@sveltejs/adapter-netlify@npm:^5.2.3":
+  version: 5.2.3
+  resolution: "@sveltejs/adapter-netlify@npm:5.2.3"
+  dependencies:
+    "@iarna/toml": "npm:^2.2.5"
+    esbuild: "npm:^0.25.4"
+    set-cookie-parser: "npm:^2.6.0"
+  peerDependencies:
+    "@sveltejs/kit": ^2.4.0
+  checksum: 10c0/caa6391f19cea852bd97e5f0d43e4ac09ab9ab83e7c11d6d17d4f25beab8fb21d21465e31671bb34fe00e76f192657bc76634f40ecffbcfcec4d4d8c18cfc424
   languageName: node
   linkType: hard
 
@@ -1943,7 +1963,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.25.0":
+"esbuild@npm:^0.25.0, esbuild@npm:^0.25.4":
   version: 0.25.10
   resolution: "esbuild@npm:0.25.10"
   dependencies:
@@ -2255,6 +2275,7 @@ __metadata:
     "@eslint/js": "npm:^9.22.0"
     "@octokit/rest": "npm:^22.0.0"
     "@sveltejs/adapter-auto": "npm:^6.0.0"
+    "@sveltejs/adapter-netlify": "npm:^5.2.3"
     "@sveltejs/kit": "npm:^2.22.0"
     "@sveltejs/vite-plugin-svelte": "npm:^6.0.0"
     "@tailwindcss/vite": "npm:^4.0.0"

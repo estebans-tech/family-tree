@@ -6,7 +6,6 @@ const config = {
 	// Consult https://svelte.dev/docs/kit/integrations
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
-
 	kit: {
 		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
 		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
@@ -17,7 +16,7 @@ const config = {
 			$components: 'src/lib/components',
 			$parsers: 'src/lib/parsers',
 			$utils: 'src/lib/utils'
-		}
+		  }
 	}
 }
 
