@@ -1,0 +1,15 @@
+node_modules/
+.svelte-kit/
+.vite/
+.dist/
+.build/
+.env
+.env.*
+.vercel/
+.netlify/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
