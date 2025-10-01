@@ -1,1 +1,8 @@
-yarn ts-node scripts/resolve-issues.ts "$1"
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Always run from repo root
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT" || exit 0
+
+node scripts/resolve-issues.mjs "$1"
