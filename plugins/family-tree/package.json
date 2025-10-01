@@ -1,5 +1,7 @@
 {
-  "name": "family-tree",
+  "name": "family-tree-plugin",
+  "private": true,
+  "version": "0.1.0",
   "packageManager": "yarn@4.9.3",
   "scripts": {
     "dev": "vite",
