@@ -13,11 +13,13 @@
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint ."
+		"lint": "prettier --check . && eslint .",
+		"sprint:s1": "ts-node scripts/setup-sprint1.ts"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.22.0",
+		"@octokit/rest": "^22.0.0",
 		"@sveltejs/adapter-auto": "^6.0.0",
 		"@sveltejs/kit": "^2.22.0",
 		"@sveltejs/vite-plugin-svelte": "^6.0.0",
@@ -39,6 +41,7 @@
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.3.2",
 		"tailwindcss": "^4.1.14",
+		"ts-node": "^10.9.2",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.20.0",
 		"vite": "^7.1.7",
