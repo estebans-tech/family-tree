@@ -1,7 +1,7 @@
   {
-    "name": "Family Tree Generator (PoC)",
+    "name": "Family Tree Generator",
     "id": "family-tree-plugin-poc",
-    "version": "0.1.0",
+    "version": "0.1.4",
     "description": "Fetch layout JSON and draw nodes/edges",
     "code": "/plugin.js",
     "author": "you",
