@@ -1,10 +1,13 @@
-{
+  {
     "name": "Family Tree Generator (PoC)",
     "id": "family-tree-plugin-poc",
     "version": "0.1.0",
-    "description": "Fetch layout JSON and (next step) draw nodes/edges",
-    "main": "/index.html",
+    "description": "Fetch layout JSON and draw nodes/edges",
+    "code": "/plugin.js",
     "author": "you",
-    "homepage": "http://localhost:5174"
+    "permissions": [
+      "content:read",
+      "content:write",
+      "allow:localstorage"
+    ]
   }
-  
