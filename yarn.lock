@@ -848,15 +848,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-auto@npm:^6.0.0":
-  version: 6.1.0
-  resolution: "@sveltejs/adapter-auto@npm:6.1.0"
-  peerDependencies:
-    "@sveltejs/kit": ^2.0.0
-  checksum: 10c0/8f0f38efbc26f7dfc523844b013c801ef1c1cfc9f3b0370ae2d446a9436297f9fd2cc9bc3c2b15649c99ae975275d58557b508640ec3ad8c75dbe0ed632935c8
-  languageName: node
-  linkType: hard
-
 "@sveltejs/adapter-netlify@npm:^5.2.3":
   version: 5.2.3
   resolution: "@sveltejs/adapter-netlify@npm:5.2.3"
@@ -914,7 +905,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/vite-plugin-svelte@npm:^6.0.0":
+"@sveltejs/vite-plugin-svelte@npm:^6.2.1":
   version: 6.2.1
   resolution: "@sveltejs/vite-plugin-svelte@npm:6.2.1"
   dependencies:
@@ -2274,10 +2265,9 @@ __metadata:
     "@eslint/compat": "npm:^1.2.5"
     "@eslint/js": "npm:^9.22.0"
     "@octokit/rest": "npm:^22.0.0"
-    "@sveltejs/adapter-auto": "npm:^6.0.0"
     "@sveltejs/adapter-netlify": "npm:^5.2.3"
     "@sveltejs/kit": "npm:^2.22.0"
-    "@sveltejs/vite-plugin-svelte": "npm:^6.0.0"
+    "@sveltejs/vite-plugin-svelte": "npm:^6.2.1"
     "@tailwindcss/vite": "npm:^4.0.0"
     "@types/node": "npm:^22"
     "@typescript-eslint/eslint-plugin": "npm:^8.45.0"
