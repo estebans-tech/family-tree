@@ -26,17 +26,11 @@ btn.addEventListener('click', async () => {
   try {
     const url = `${base}?q=${encodeURIComponent(q)}`
     const res = await fetch(url, { method: 'GET' })
-    const data = (await res.json()) as LayoutPayload
-    out.textContent = JSON.stringify({ inPenpot, ...data }, null, 2)
+    const data = await res.json()
+    out.textContent = JSON.stringify({ inPenpot: false, ...data }, null, 2)
 
-    if (!data.ok) return
-    if (!inPenpot) {
-      out.textContent += '\n\nNote: open this plugin inside Penpot to draw on the canvas.'
-      return
-    }
-
-    await drawNodes(data)   // these functions use the penpot API
-    // await drawEdges(data) // enable in the next step
+    // Send to worker for drawing
+    window.parent?.postMessage({ type: 'DRAW', payload: data }, '*')
   } catch (e) {
     out.textContent = `Fetch error: ${String(e)}`
   }
