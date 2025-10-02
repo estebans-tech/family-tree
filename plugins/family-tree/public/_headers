@@ -2,3 +2,11 @@
   Access-Control-Allow-Origin: *
   Access-Control-Allow-Methods: GET, OPTIONS
   Access-Control-Allow-Headers: *
+
+/plugin.js
+  Cache-Control: no-store
+  Access-Control-Allow-Origin: *
+
+/manifest.json
+  Cache-Control: no-store
+  Access-Control-Allow-Origin: *

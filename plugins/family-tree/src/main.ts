@@ -29,8 +29,9 @@ btn.addEventListener('click', async () => {
     const data = await res.json()
     out.textContent = JSON.stringify({ inPenpot: false, ...data }, null, 2)
 
-    // Send to worker for drawing
-    window.parent?.postMessage({ type: 'DRAW', payload: data }, '*')
+    // ✔ send to worker under `pluginMessage`, INSIDE the try scope
+    window.parent?.postMessage({ pluginMessage: { type: 'DRAW', payload: data } }, '*')
+    console.log('sent DRAW to worker', data)
   } catch (e) {
     out.textContent = `Fetch error: ${String(e)}`
   }
